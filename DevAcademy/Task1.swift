@@ -30,12 +30,10 @@ enum PossibleKind : RawRepresentable {
     
     init?(rawValue : String) {
         
-        if let kind = Kind.init(rawValue:  rawValue)
-        {
+        if let kind = Kind.init(rawValue:  rawValue) {
             self = PossibleKind.kind(kind)
         }
-        else
-        {
+        else {
             self = .unknown(rawValue)
         }
     }
@@ -85,12 +83,10 @@ class DataService {
     var data : Result<Features, Error>?
 
     func fetchdata(_ action: @escaping(Result<Features, Error>) -> Void) {
-        if let data = data
-        {
+        if let data = data {
             action(data)
         }
-        else
-        {
+        else {
             Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { [weak self]_ in
                 let result = Result<Features, Error>.success(DataService.mockData)
                 
