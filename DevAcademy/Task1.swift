@@ -52,7 +52,7 @@ enum PossibleKind : RawRepresentable {
 }
 
 struct Properties {
-    let ogcFid : NSNumber
+    let ogcFid : Int
     let obrId1 : URL
     let druh : PossibleKind
     let název : String
