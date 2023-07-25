@@ -51,9 +51,7 @@ struct PlacesScene: View {
             $0.properties.ogcFid == feature.properties.ogcFid
         })
     }
-
 }
-
 
 
 struct PlacesScene_Previews: PreviewProvider {
