@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		778CE8022A70035200440570 /* PlacesScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778CE8012A70035200440570 /* PlacesScene.swift */; };
+		778CE8042A7004CB00440570 /* PlacesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778CE8032A7004CB00440570 /* PlacesRow.swift */; };
 		77EA60C62A66C93A0017FB83 /* Task1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EA60C52A66C93A0017FB83 /* Task1.swift */; };
 		C05610492A5C78CA007FB970 /* DevAcademyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05610482A5C78CA007FB970 /* DevAcademyApp.swift */; };
 		C056104B2A5C78CA007FB970 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056104A2A5C78CA007FB970 /* ContentView.swift */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		778CE8012A70035200440570 /* PlacesScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesScene.swift; sourceTree = "<group>"; };
+		778CE8032A7004CB00440570 /* PlacesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesRow.swift; sourceTree = "<group>"; };
 		77EA60C52A66C93A0017FB83 /* Task1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task1.swift; sourceTree = "<group>"; };
 		C05610452A5C78CA007FB970 /* DevAcademy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevAcademy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C05610482A5C78CA007FB970 /* DevAcademyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevAcademyApp.swift; sourceTree = "<group>"; };
@@ -34,6 +38,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		778CE7FF2A7002B700440570 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				778CE8002A7002D800440570 /* Places */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		778CE8002A7002D800440570 /* Places */ = {
+			isa = PBXGroup;
+			children = (
+				778CE8012A70035200440570 /* PlacesScene.swift */,
+				778CE8032A7004CB00440570 /* PlacesRow.swift */,
+			);
+			path = Places;
+			sourceTree = "<group>";
+		};
 		C056103C2A5C78CA007FB970 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				C05610482A5C78CA007FB970 /* DevAcademyApp.swift */,
+				778CE7FF2A7002B700440570 /* Scenes */,
 				C056104A2A5C78CA007FB970 /* ContentView.swift */,
 				C056104C2A5C78CB007FB970 /* Assets.xcassets */,
 				C056104E2A5C78CB007FB970 /* Preview Content */,
@@ -140,8 +162,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				778CE8042A7004CB00440570 /* PlacesRow.swift in Sources */,
 				77EA60C62A66C93A0017FB83 /* Task1.swift in Sources */,
 				C056104B2A5C78CA007FB970 /* ContentView.swift in Sources */,
+				778CE8022A70035200440570 /* PlacesScene.swift in Sources */,
 				C05610492A5C78CA007FB970 /* DevAcademyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
