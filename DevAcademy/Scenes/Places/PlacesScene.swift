@@ -35,8 +35,10 @@ struct PlacesScene: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("Favourites"){
+                    Button.init {
                         showFavourites = true
+                    } label: {
+                        Image(systemName: "heart.fill")
                     }
                 }
             }
