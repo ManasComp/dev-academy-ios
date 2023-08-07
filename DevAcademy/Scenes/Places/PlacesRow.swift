@@ -30,9 +30,8 @@ struct PlaceDetail: View {
             Text(feature.properties.druh.rawValue)
                 .foregroundColor(.secondary)
                 .font(.subheadline)
-            
-            Spacer()
         }
+        .frame(maxHeight: .infinity, alignment: .top)
         .padding()
         .navigationTitle("Detail Místa")
     }
