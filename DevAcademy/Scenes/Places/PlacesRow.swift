@@ -45,7 +45,6 @@ struct PlacesRow: View {
         NavigationLink(destination: PlaceDetail(feature: feature)) {
             HStack {
                 HStack {
-                    
                     AsyncImage(url: feature.properties.obrId1) {
                         image in
                         image
