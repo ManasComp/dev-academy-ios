@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import ActivityIndicatorView
 
 struct PlacesScene: View {
     @State var features: [Feature] = []
+    @State var showFavourites = false;
     
     var body: some View {
         NavigationStack {
@@ -25,13 +27,32 @@ struct PlacesScene: View {
                     .listStyle(.plain)
                 }
                 else {
-                    ProgressView()
+                    ActivityIndicatorView(isVisible: .constant(true),
+                    type: .growingCircle)
                 }
             }
             .navigationTitle("Kultůr Mapa")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button.init {
+                        showFavourites = true
+                    } label: {
+                        Image(systemName: "heart.fill")
+                    }
+                }
+            }
         }
+
         .onAppear(perform: fetch)
+        .sheet(isPresented: $showFavourites) {
+            Text("Zatím tady nic není")
+                .presentationDetents([.medium, .large])
+                .presentationDragIndicator(.visible)
+        }
     }
+    
+    
     
     func fetch()
     {
